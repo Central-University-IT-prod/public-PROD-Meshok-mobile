@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Feedbacker</string>
+    <string name="mainBottom">Опрос</string>
+    <string name="profileBottom">Профиль</string>
+    <string name="loginAuth">Логин</string>
+    <string name="passwordAuth">Пароль</string>
+    <string name="emailRegister">E-mail</string>
+    <string name="ageRegister">Возраст</string>
+    <string name="genderRegister">Пол</string>
+    <string name="registerBtn">Зарегистрироваться</string>
+    <string name="orRegister">или</string>
+    <string name="loginRegister">Войти</string>
+    <string name="passwordRegister">Пароль</string>
+    <string name="scanQr">Сканировать QR-код</string>
+    <string name="formId">Введите ID</string>
+    <string name="feedbacker">Feedbacker</string>
+    <string name="send">Отправить</string>
+    <string name="of">из</string>
+    <string name="ten">10</string>
+    <string name="back">Назад</string>
+    <string name="acc">Аккаунт</string>
+    <string name="exit">Выйти</string>
+    <string name="wrLP">Неверный логин или пароль</string>
+    <string name="fill">Заполните все ответы</string>
+    <string name="man">Мужчина</string>
+    <string name="woman">Женщина</string>
+    <string name="checkFields">Проверьте правильность входных данных</string>
+    <string name="ok">Готово</string>
+    <string name="alreadyExist">Пользователь с таким email уже существует</string>
+    <string name="fillF">Заполните поля полностью</string>
+    <string name="mans">Мужской</string>
+</resources>

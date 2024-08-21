@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:animateLayoutChanges="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/create"
+        android:textSize="25sp"
+        android:gravity="center|start"
+        android:paddingStart="20dp"
+        android:text="Добро пожаловоть!"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:ignore="RtlSymmetry" />
+    <FrameLayout
+        android:background="@drawable/round_corners_half"
+        android:paddingBottom="20dp"
+        android:paddingTop="15dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_gravity="center|bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_gravity="center"
+                app:shapeAppearance="@style/Rounded"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/emailRegister">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                app:shapeAppearance="@style/Rounded"
+                android:layout_height="wrap_content"
+                android:hint="@string/passwordRegister">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_et"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signIn"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loginRegister" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/orText"
+                    android:background="#c0c0c0" />
+
+                <TextView
+                    android:id="@+id/orText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/orRegister"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/orText"
+                    android:background="#c0c0c0" />
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registerBtn" />
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pb1"
+        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
